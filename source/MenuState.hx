@@ -17,7 +17,9 @@ class MenuState extends FlxState
 		var grid = new Array2<GridTile>(10, 10);
 		
 		grid.forEach(function(tile:GridTile, u:Int, v:Int):GridTile {
-			return new GridTile(Random.enumConstructor(GridTileType));
+			var tile = new GridTile(Random.enumConstructor(GridTileType), u, v);
+			add(tile);
+			return tile;
 		});
 		
 		trace(grid);
