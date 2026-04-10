@@ -14,10 +14,12 @@ class MenuState extends FlxState
 	{
 		super.create();
 		
-		var grid = new Array2<GridTile>(10, 10);
+		var grid = new Array2<GridTile>(3, 3);
 		
 		grid.forEach(function(tile:GridTile, u:Int, v:Int):GridTile {
-			var tile = new GridTile(Random.enumConstructor(GridTileType), u, v);
+			var tile = new GridTile(/*Random.enumConstructor(GridTileType), u, v*/);
+			tile.x = u * GridTile.SIZE;
+			tile.y = v * GridTile.SIZE;
 			add(tile);
 			return tile;
 		});

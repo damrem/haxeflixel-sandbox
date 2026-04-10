@@ -35,5 +35,5 @@ class Reg
 	 */
 	public static var saves:Array<FlxSave> = [];
 	
-	public static inline var TILE_SIZE:Int = 32;
+	//public static inline var TILE_SIZE:Int = 32;
 }

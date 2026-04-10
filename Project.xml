@@ -34,9 +34,10 @@
 	<!-- _______________________________ Libraries ______________________________ -->
 
 	<haxelib name="flixel" />
-	<!--<haxelib name="thx.core"/>-->
+	<haxelib name="thx.core"/>
 	<haxelib name="polygonal-ds"/>
 	<haxelib name="random"/>
+	<haxelib name="actuate"/>
 	
 	
 	<!--In case you want to use the addons package-->
